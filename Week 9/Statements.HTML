@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widt-device-width, initial-scale=1.0">
+        <link ref="stylesheet" href="style/style.css">
+        <title>Document</title>
+        <script>
+            function displayValue(){
+                var userInput = document.getElementById("userValue").value
+
+                if(userInput > 0){
+                    alert("value entered: " + userInput + " a positive number")
+                    console.log("value entered: " +userInput + " a positive number")
+                } else if (userInput < 0){
+                    alert("value entered: " + userInput + " a negative number")
+                    console.log("value entered: " +userInput + " a negative number")
+                } else{
+                    alert("value entered: " + userInput + " this must be a zero")
+                    console.log("value entered: " +userInput + " this must be a zero")
+                }
+            }
+        </script>
+        
+    </head>
+    <body>
+        <input type="text" id="userValue" placeholder="Please enter a value">
+        <button onclick="displayValue()">Click Me!</button>
+    </body>
+    </html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <script>
+        function login() {
+            alert("You are logged in");
+            window.location.href = '#';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jack on Black's</h1>
+        <h2>Online Casino!</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-register">
+        <h2>Login / Register</h2>
+        <form action="#" method="post" onsubmit="login(); return false;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Jack on Black's Online Casino! We are passionate about providing a unique gaming experience for our users. Our team is dedicated to creating a diverse collection of games that cater to different interests and skill levels.</p>
+        <p>Whether you are a casual gamer or a seasoned pro, our platform offers a variety of games to keep you entertained. Join our community and explore the world of gaming with us!</p>
+      </section>
+
+      <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions or suggestions? Reach out to us using the form below:</p>
+      
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="games">
+        <h2>Explore Our Games</h2>
+      
+        <div class="game-card">
+          <img src="Game1.png" alt="Game 1">
+          <h3>Texas Hold'em Showdown</h3>
+          <p>Join the poker craze with Texas Hold'em Showdown. Play in high-stakes tournaments or casual tables, bluff your way to victory, and build your poker empire. Compete against other players or AI opponents, and prove that you have the best poker face.</p>
+          <button onclick="openGameWindow('Game1.png', 'Texas Hold\'em Showdown')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+      
+        <div class="game-card">
+          <img src="game2.jpg" alt="Game 2">
+          <h3>Lucky Roulette Royale</h3>
+          <p>Spin the wheel of fortune in this classic casino game with a modern twist. With multiple betting options and a progressive jackpot, Lucky Roulette Royale offers an exciting experience for both new players and seasoned gamblers.</p>
+          <button onclick="openGameWindow('game2.jpg', 'Lucky Roulette Royal')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+
+        <div class="game-card">
+          <img src="game3.jpg" alt="Game 3">
+          <h3>Blackjack Blitz Arena</h3>
+          <p>Enter the thrilling world of Blackjack Blitz Arena, where you compete against players from around the globe. Test your skills in fast-paced rounds, strategize your moves, and climb the leaderboard to win big. The game features various tables with different stakes to suit all players</p>
+          <button onclick="openGameWindow('game3.jpg', 'Blackjack Blitz Arena')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+      
+        <div class="game-card">
+          <img src="game4.jpg" alt="Game 4">
+          <h3>Mystic Slots Adventure</h3>
+          <p>Embark on a mystical journey with Mystic Slots Adventure. This online slot game combines traditional slot machine mechanics with an engaging storyline. Unlock bonus rounds, discover hidden treasures, and spin your way to massive winnings.</p>
+          <button onclick="openGameWindow('game4.jpg', 'Mystic Slots Adventure')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+
+        <div class="game-card">
+          <img src="game5.png" alt="Game 5">
+          <h3>Fantasy Sports Manager</h3>
+          <p>Experience the excitement of managing your own fantasy sports team in this immersive online game. Draft players, make strategic decisions, and compete against other managers to win virtual currency. The realistic player statistics and dynamic gameplay make Fantasy Sports Manager a must-play for sports enthusiasts</p>
+          <button onclick="openGameWindow('game5.png', 'Fantasy Sports Manager')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+
+        <div class="game-card">
+          <img src="game6.jpg" alt="Game 6">
+          <h3>Bingo Bonanza Live</h3>
+          <p>Join the lively community of Bingo Bonanza Live and enjoy the classic game of chance with a social twist. Play in real-time with friends or make new ones, participate in themed rooms, and daub your way to exciting prizes and jackpots</p>
+          <button onclick="openGameWindow('game6.jpg', 'Bingo Bonanza Live')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+
+        <div class="game-card">
+          <img src="game7.jpg" alt="Game 7">
+          <h3>High Stakes Horse Racing</h3>
+          <p> Immerse yourself in the thrilling world of High Stakes Horse Racing. Place bets on virtual horse races, study the form guide, and cheer for your chosen steed as they sprint towards the finish line. With realistic graphics and unpredictable outcomes, every race is a heart-pounding experience</p>
+          <button onclick="openGameWindow('game7.jpg', 'High Stakes Horse Racing')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+
+        <div class="game-card">
+          <img src="game8.jpg" alt="Game 8">
+          <h3>Treasure Hunt Scratch Cards</h3>
+          <p>Embark on a virtual treasure hunt with Treasure Hunt Scratch Cards. Uncover hidden symbols and match them to reveal your prizes. With various themed cards and interactive scratch mechanics, this game adds an element of adventure to the classic scratch card experience. Discover the thrill of revealing hidden treasures and winning instant cash rewards</p>
+          <button onclick="openGameWindow('game8.jpg', 'Treasure hunt Scratch Cards')">Try Me</button>
+          <a href="#">Play Now</a>
+        </div>
+      
+      </section>
+
+      <script>
+        function openGameWindow(imageSrc, gameName) {
+            
+            var gameWindow = window.open('', '_blank');
+            
+            
+            gameWindow.document.body.style.background = 'url(' + imageSrc + ') no-repeat center center fixed';
+            gameWindow.document.body.style.backgroundSize = 'cover';
+            gameWindow.document.body.innerHTML = '<h1>' + gameName + '</h1>';
+        }
+    </script>
+      
+    <footer>
+      <p>&copy; Jack on Blacks</p>
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,9 @@
+#nameText{
+    border-radius:50px;
+}
+body{
+background-image: url(/Resources/BottomCenter.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: Bottom center bottom center
+}
